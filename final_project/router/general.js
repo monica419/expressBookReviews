@@ -4,7 +4,7 @@ const axios = require('axios');
 const public_users = express.Router();
 
 // Task 1: Get the list of all books
-public_users.get('/', function (req, res) {
+public_users.get('/books', function (req, res) {
     return res.status(200).json({ books: JSON.stringify(books, null, 2) });
 });
 
